@@ -1,14 +1,10 @@
-# Default starter for Gridsome
+# Jacurtis.com
 
-This is the project you get when you run `gridsome create new-project`.
+I have many websites, but this one is my own. I control it and I express myself through it. This is my personal website. The main focal point of the site is my Journal, which offers insight into what I am pondering and learning about throughout the year through candid writings.
 
-### 1. Install Gridsome CLI tool if you don't have
+### Tech Stack
 
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. Javascript
+2. Vue.js
+3. Gridsome
+4. AWS
