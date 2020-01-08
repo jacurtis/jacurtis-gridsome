@@ -7,6 +7,8 @@
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/journal/">Journal</g-link>
+        <g-link class="nav__link" to="/contact/">Contact</g-link>
       </nav>
     </header>
     <slot/>
@@ -23,7 +25,7 @@ query {
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: 'Nunito Sans',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;
