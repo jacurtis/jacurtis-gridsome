@@ -1,12 +1,7 @@
 <template>
   <div class="layout">
     <div class="container">
-      <header class="header">
-        <strong>
-          <g-link class="brand" to="/">{{ $static.metadata.siteName }}</g-link>
-        </strong>
-        <site-navigation></site-navigation>
-      </header>
+      <site-header></site-header>
       <slot/>
     </div>
     <site-footer></site-footer>
@@ -23,21 +18,50 @@ query {
 
 <script>
 import SiteFooter from '~/components/Site/Footer';
-import SiteNavigation from '~/components/Site/Navigation';
+import SiteHeader from '~/components/Site/Header';
 export default {
   components: {
     SiteFooter,
-    SiteNavigation,
+    SiteHeader,
   }
 }
 </script>
 
 <style lang="scss">
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-family: henriette, sans-serif;
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 2.3rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 body {
-  font-family: 'Nunito Sans',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: basic-sans, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
   margin:0;
   padding:0;
   line-height: 1.5;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .container {
