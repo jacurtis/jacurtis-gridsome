@@ -2,12 +2,13 @@
   <Layout>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <g-image alt="Example image" class="rounded" src="~/resources/images/me.jpg" width="135" />
 
-    <h1>Hello, world!</h1>
+    <h1 class="intro-header">J. Alexander Curtis</h1>
+    <h4 class="lead-text">I am a marketer and web developer</h4>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+      I run the DevMarketer Youtube channel, which helps people from all over the world build and grown their next great idea. We don't only teach you to code, but also how to market it.
     </p>
 
     <p class="home-links">
@@ -29,5 +30,17 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+
+h1.intro-header {
+  margin-bottom: 0;
+}
+
+h4.lead-text {
+  margin-top: 0;
+}
+
+.rounded {
+  border-radius: 999px;
 }
 </style>

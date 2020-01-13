@@ -8,8 +8,9 @@
     </p>
     <h3>Anything Else</h3>
     <p>
-      If you want to get in touch to chat about programming, product or anything else, flick me an email or send me a DM on twitter. I'd love to hear from you!
+      If you want to get in touch to chat about programming, product or anything else, shoot me an email or send me a DM on twitter. I'd love to hear from you!
     </p> 
+    <p><strong>Don't be afraid to just say "hi"</strong>.</p>
   </Layout>
 </template>
 
