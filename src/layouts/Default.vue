@@ -29,12 +29,13 @@ export default {
 
 <style lang="scss">
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
-  font-family: henriette, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 700;
 }
 
 h1, .h1 {
   font-size: 2.3rem;
+  font-weight: 900;
 }
 
 h2, .h2 {
@@ -44,6 +45,7 @@ h2, .h2 {
 h3 {
   font-size: 1.8rem;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 h4 {
@@ -52,7 +54,7 @@ h4 {
 }
 
 body {
-  font-family: basic-sans, sans-serif;
+  font-family: merriweather, serif;
   font-weight: 400;
   font-size: 10px;
   margin:0;
@@ -61,7 +63,8 @@ body {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 16px;
+  margin-top: 0;
 }
 
 .container {

@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 footer {
     background-color: #f2f2f2;
-    padding: 60px 10%;
+    padding: 50px 10%;
     margin-top: 100px;
     font-size: 1.2rem;
 
@@ -38,11 +38,13 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+}
 
-        h4 {
-            font-family: basic-sans, sans-serif;
-            font-weight: 700;
-        }
+.footer-message {
+    p {
+        margin-bottom: 0;
+        color: #7f8c8d;
     }
 }
 .footer-links {
