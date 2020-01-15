@@ -14,7 +14,7 @@
       </div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
-        <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+        <g-link to="/journal" class="font-bold uppercase">Back to Journal</g-link>
       </div>
     </div>
   </Layout>
@@ -38,7 +38,7 @@ query Post ($path: String!) {
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title
+      // title: this.$page.post.title
     }
   }
 }

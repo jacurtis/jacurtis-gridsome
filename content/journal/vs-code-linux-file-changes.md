@@ -4,7 +4,6 @@ date: 2019-01-07
 published: false
 tags: ['VS Code', 'Linux']
 series: false
-cover_image: ./images/alexandr-podvalny-220262-unsplash.jpg
 canonical_url: false
 description: "VS Code on Linux requires a bit of manual tweaks to get file watchers to work properly"
 ---
@@ -102,7 +101,7 @@ To stop VS Code from watching these files, you just need to change a setting.
 
 First go to `File > Preferences > Settings` or press `Ctrl + ,` (`Ctrl + comma`). 
 
-![Exclude File Watchers in VS Code Settings](./images/vscode-file-watchers-exclude.png)
+![Exclude File Watchers in VS Code Settings](./images/vscode-file-watcher-exclude.png)
 
 Then in the search bar in the top of the settings tab, just start typing `files.watcher`. It will pull up a section that says "Files: Watcher Exclude". These are all the folders that VS Code will ignore. I recommend adding more here that you know you will never need to watch.
 
