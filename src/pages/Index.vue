@@ -2,7 +2,7 @@
   <Layout>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" class="rounded" src="~/resources/images/me.jpg" width="135" />
+    <g-image alt="J. Alexander Curtis Profile Image" class="rounded" src="~/assets/images/me.jpg" width="135" />
 
     <h1 class="intro-header">J. Alexander Curtis</h1>
     <h4 class="lead-text">I am a marketer and web developer</h4>

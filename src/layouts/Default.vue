@@ -89,5 +89,9 @@ p {
   font-size: 1.4em;
 }
 
+.hover-brand:hover {
+  color: #ff3f34;
+}
+
 
 </style>
