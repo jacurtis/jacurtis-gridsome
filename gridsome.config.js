@@ -9,7 +9,7 @@ module.exports = {
   siteDescription: 'Personal website of J. Alexander Curtis including his daily journal of personal and professional thoughts and learnings.',
   siteUrl: 'https://jacurtis.com',
   templates: {
-    Post: '/journal/:title',
+    Post: '/journal/:slug',
     Tag: '/tag/:id'
   },
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Post',
-        path: 'content/journal/*.md',
+        path: 'content/journal/**/*.md',
         refs: {
           tags: {
             typeName: 'Tag',

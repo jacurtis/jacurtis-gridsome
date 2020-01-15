@@ -1,7 +1,8 @@
 ---
-title: A post with a cover image
-date: 2019-01-07
-published: false
+title: Configuring File Watchers for VS Code on Linux
+slug: configuring-file-watchers-vs-code-on-linux
+date: 2020-01-07
+published: true
 tags: ['VS Code', 'Linux']
 series: false
 canonical_url: false
