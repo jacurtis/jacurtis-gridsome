@@ -1,5 +1,5 @@
 <template>
-	<div class="post border-gray-400 border-b">
+	<div class="journal-preview post border-gray-400 border-b">
 		<h2>
 			<g-link :to="post.node.path" class="text-copy-primary hover-brand">{{ post.node.title }}</g-link>
 		</h2>

@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <div class="top-accent-bar"></div>
     <div class="container">
       <site-header></site-header>
       <slot/>
@@ -93,5 +94,9 @@ p {
   color: #ff3f34;
 }
 
-
+.top-accent-bar {
+  width: 100%;
+  background-color: #ff3f34;
+  height: 5px;
+}
 </style>

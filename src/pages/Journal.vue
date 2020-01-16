@@ -21,7 +21,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 3, page: $page) {
+  posts: allPost (sortBy: "date", order: DESC, perPage: 3, page: $page, filter: { published: {in: true}}) {
     totalCount
     pageInfo {
       totalPages
@@ -52,3 +52,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.journal-preview:last-of-type {
+  border-bottom: transparent 0px solid;
+}
+</style>

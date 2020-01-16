@@ -2,7 +2,7 @@
 title: Designing Boilerplate CSS for Posts - A Checklist of Design Items
 slug: designing-boilerplate-css-for-posts
 date: 2020-01-14
-published: false
+published: true
 tags: ['Jacurtis.com', 'CSS', Coding]
 series: false
 canonical_url: false
