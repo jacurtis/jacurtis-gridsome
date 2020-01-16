@@ -33,6 +33,7 @@ query Posts ($page: Int) {
         title
         date (format: "MMMM D, Y")
         description
+        content
         path
       }
     }

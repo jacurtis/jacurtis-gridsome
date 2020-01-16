@@ -1,12 +1,12 @@
 <template>
 	<div class="journal-preview post border-gray-400 border-b">
 		<h2>
-			<g-link :to="post.node.path" class="text-copy-primary hover-brand">{{ post.node.title }}</g-link>
+			<g-link :to="post.node.path">{{ post.node.title }}</g-link>
 		</h2>
 		<div class="post-metadata">
 			<span class="italics">{{ post.node.date }}</span>
 			<span> &middot; </span>
-			<span>{{ post.node.timeToRead }} min read</span>
+			<reading-time :content="post.node.content"></reading-time>
 		</div>
 
 		<div class="post-preview">
@@ -20,11 +20,15 @@
 </template>border-gray-400 border-b
 
 <script>
-	export default {
-		props: {
-			post: Object
-		}
+import ReadingTime from './ReadingTime'
+export default {
+	props: {
+		post: Object
+	},
+	components: {
+		ReadingTime
 	}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -50,7 +54,13 @@
 .read-more {
 	margin: 16px 0 24px 0;
 	text-transform: uppercase;
+	transition: all 0.25s ease-in-out;
 
+	&:hover {
+		transform: translateX(5px);
+		transition: all 0.25s ease-in-out;
+	}
+	
 	a {
 		font-size: 16px;
 		font-weight: 700;
@@ -69,6 +79,11 @@ h2 {
 	a {
 		text-decoration: none;
 		color: #222222;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			color: #ff3f34;
+			transition: all 0.2s ease-in-out;
+		}
 	}
 }
 </style>
