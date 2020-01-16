@@ -9,3 +9,7 @@ canonical_url: false
 description: "While designing a simple CSS stylesheet for this blog, here are all the elements I found that needed to be designed for"
 ---
 
+Today, while working towards getting this site up and running in its' primative form, I ran into the need to create some basic styling for my new website. My goal is to keep the styling pretty minimal at the moment.
+
+So I wished I had a nice list of each element I should style
+

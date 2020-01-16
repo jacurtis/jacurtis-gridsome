@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto py-16">
+    <div class="container-inner mx-auto py-16 journal-listings">
       
       <journal-preview 
         v-for="post in $page.posts.edges" 
@@ -54,7 +54,14 @@ export default {
 </script>
 
 <style lang="scss">
-.journal-preview:last-of-type {
-  border-bottom: transparent 0px solid;
+.journal-preview {
+  
+  &:last-of-type {
+    border-bottom: transparent 0px solid;
+  }
+}
+
+.journal-listings {
+  padding-top: 48px;
 }
 </style>

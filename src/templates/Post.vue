@@ -1,20 +1,14 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
-      <div class="flex mb-8 text-sm">
-        <g-link
-          :to="tag.path"
-          v-for="tag in $page.post.tags"
-          :key="tag.id"
-          class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300">
-          {{ tag.title }}
-        </g-link>
+    <div class="post-container">
+      <h1 class="post-heading">{{ $page.post.title }}</h1>
+      <div class="post-date">Published {{ $page.post.date }}</div>
+      <div class="post-tags">
+        <jac-tag v-for="tag in $page.post.tags" :key="tag.id" :tag="tag"></jac-tag>
       </div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
-      <div class="mb-8">
-        <g-link to="/journal" class="font-bold uppercase">Back to Journal</g-link>
+      <div class="journal-back-button">
+        <g-link to="/journal">👈 Back to Journal</g-link>
       </div>
     </div>
   </Layout>
@@ -35,7 +29,11 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import JacTag from './../components/Tag'
 export default {
+  components: {
+    JacTag
+  },
   metaInfo() {
     return {
       title: this.$page.post.title
@@ -43,3 +41,38 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+h1 {
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.post-date {
+  font-size: 18px;
+  color: rgb(70, 70, 70);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.post-tags {
+  display: flex;
+  margin: 10px 0;
+}
+
+.journal-back-button {
+  margin: 25px 0;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  a {
+    color: #444;
+    text-decoration: none;
+  }
+
+  &:hover {
+    transform: translate(-20px, 0);
+    transition: all 0.25s ease-in-out;
+  }
+}
+</style>
