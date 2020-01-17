@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="top-accent-bar"></div>
-    <div class="container">
+    <div class="container flex-1">
       <site-header></site-header>
       <slot/>
     </div>
@@ -98,5 +98,15 @@ p {
   width: 100%;
   background-color: #ff3f34;
   height: 5px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-1 {
+  flex: 1;
 }
 </style>
