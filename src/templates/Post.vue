@@ -76,3 +76,26 @@ h1 {
   }
 }
 </style>
+
+<style lang="scss">
+.markdown-body {
+  a {
+    color: #111;
+    text-decoration: none;
+    background-image: linear-gradient(transparent 0%,transparent calc(50% - 8px),#ff967e ,calc(50% - 8px),#ff967e 100%);
+    background-size: 100% 230%;
+    background-position: 0 0;
+    transition: background-position 120ms ease-in-out, padding 120ms ease-in-out, color 100ms ease-in-out;
+
+    &:hover {
+      color: white;
+      background-image: linear-gradient(transparent 0%,transparent calc(50% - 8px),#ff3f34,calc(50% - 8px),#ff3f34 100%); 
+      background-position: 0 100%;
+    }
+  }
+
+  .g-image {
+    max-width: 100%;
+  }
+}
+</style>
