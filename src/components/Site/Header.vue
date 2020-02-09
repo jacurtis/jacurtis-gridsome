@@ -4,9 +4,9 @@
       <g-link class="brand" to="/">JACURTIS</g-link>
     </strong>
     <nav class="nav">
-      <g-link class="nav__link" to="/">Home</g-link>
+      <g-link class="nav__link" to="/" exact>Home</g-link>
       <g-link class="nav__link" to="/about/">About</g-link>
-      <g-link class="nav__link" to="/journal/">Journal</g-link>
+      <g-link class="nav__link" to="/journal">Journal</g-link>
       <g-link class="nav__link" to="/contact/">Contact</g-link>
     </nav>
   </header>
@@ -25,7 +25,9 @@
     font-size: 1.3rem;
 
     &.active--exact,
-    &.active--exact:hover {
+    &.active,
+    &.active--exact:hover,
+    &.active:hover {
       color: #ff3f34;
     }
 
