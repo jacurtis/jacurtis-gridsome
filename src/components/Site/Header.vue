@@ -16,6 +16,13 @@
   .brand {
     font-size: 1.3rem;
   }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 80px;
+  }
 
   .nav__link {
     color: #2D3748;
