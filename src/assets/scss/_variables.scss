@@ -1,9 +1,21 @@
 /* FONTS */
 $font-family-headings: montserrat, sans-serif;
+$font-family-body: merriweather, serif;
+$font-family-monospace: courier-prime, "Courier New",
+Courier,
+monospace;
 
+$font-weight-light: 200;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
+$font-size: 10px;
+
 /* COLORS */
 $brand: #ff3f34;
+$secondary: #1B91FF;
+$secondary-alt: #3C79B3;
+$highlight: #BBCC01;
+$black: #1d1e24;
+$white: #f1f1f1;

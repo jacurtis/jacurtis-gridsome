@@ -112,4 +112,5 @@ That's it for today's post. It was a bit weird and technical, but the idea is th
 
 ##### References
 
-[Official VS Code Documentation](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
+\[1\] [Pop!_OS](https://pop.system76.com/)  
+\[2\] [Official VS Code Documentation > Large Workspace Error](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
