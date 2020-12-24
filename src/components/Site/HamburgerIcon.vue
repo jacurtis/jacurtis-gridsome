@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/scss/_variables";
+@import "~/assets/scss/_media-queries";
 #hamburger-menu {
   z-index: 999;
   width: 30px;
@@ -42,6 +43,10 @@ export default {
   transition: .5s ease-in-out;
   background-color: transparent;
   cursor: pointer;
+
+  @include desktop() {
+    display: none;
+  }
 
   span {
     display: block;
