@@ -25,13 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/_variables";
-<<<<<<< HEAD
+@import "~/assets/scss/_variables.scss";
 @import "~/assets/scss/_media-queries.scss";
-
-=======
-@import "~/assets/scss/_media-queries";
->>>>>>> ad45f1a17a2c1b0179ca30593c874a81fa14adf4
 #hamburger-menu {
   z-index: 999;
   width: 30px;
@@ -50,11 +45,7 @@ export default {
   cursor: pointer;
 
   @include desktop() {
-<<<<<<< HEAD
-    visibility: hidden;
-=======
     display: none;
->>>>>>> ad45f1a17a2c1b0179ca30593c874a81fa14adf4
   }
 
   span {
