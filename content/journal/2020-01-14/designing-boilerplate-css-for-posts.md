@@ -11,5 +11,4 @@ description: "While designing a simple CSS stylesheet for this blog, here are al
 
 Today, while working towards getting this site up and running in its' primative form, I ran into the need to create some basic styling for my new website. My goal is to keep the styling pretty minimal at the moment.
 
-So I wished I had a nice list of each element I should style
-
+So I wished I had a nice list of each element I should style. Instead of pulling in a fancy CSS Framework (that everyone is doing nowadays), I decided to practice 
