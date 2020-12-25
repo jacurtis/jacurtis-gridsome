@@ -2,7 +2,7 @@
 title: How to Use Emojis on Linux
 slug: how-to-use-emojis-linux-ubuntu
 date: 2020-01-17
-published: false
+published: true
 tags: ['Linux']
 series: false
 canonical_url: false
