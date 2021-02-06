@@ -4530,6 +4530,13 @@
   "resolved" "https://registry.npmjs.org/gridsome-helper-json/-/gridsome-helper-json-1.0.3.tgz"
   "version" "1.0.3"
 
+"gridsome-plugin-rss@^1.2.0":
+  "integrity" "sha512-rC96wu1RhMjHnrdH2AKz6zcBkdNfGSVyULXUQeFlvp74uNT9u71roRI/JlMLayk+ViMsUnxMFSJ6ExIwHTSYZQ=="
+  "resolved" "https://registry.npmjs.org/gridsome-plugin-rss/-/gridsome-plugin-rss-1.2.0.tgz"
+  "version" "1.2.0"
+  dependencies:
+    "rss" "^1.2.2"
+
 "gridsome@^0.7.23":
   "integrity" "sha512-2/koBt4YWoTKRQR+7Gy84EHbNTa9y6JgRjBO84wOpZjEWglwxDh0cFAq8QbhHnf13mXbJVRm5aHBESO5iD5BcA=="
   "resolved" "https://registry.npmjs.org/gridsome/-/gridsome-0.7.23.tgz"
@@ -6264,12 +6271,24 @@
   "resolved" "https://registry.npmjs.org/mime-db/-/mime-db-1.43.0.tgz"
   "version" "1.43.0"
 
+"mime-db@~1.25.0":
+  "integrity" "sha1-wY29fHOl2/b0SgJNwNFloeexw5I="
+  "resolved" "https://registry.npmjs.org/mime-db/-/mime-db-1.25.0.tgz"
+  "version" "1.25.0"
+
 "mime-types@^2.1.12", "mime-types@^2.1.21", "mime-types@~2.1.19", "mime-types@~2.1.24":
   "integrity" "sha512-01paPWYgLrkqAyrlDorC1uDwl2p3qZT7yl806vW7DvDoxwXi46jsjFbg+WdwotBIk6/MbEhO/dh5aZ5sNj/dWQ=="
   "resolved" "https://registry.npmjs.org/mime-types/-/mime-types-2.1.26.tgz"
   "version" "2.1.26"
   dependencies:
     "mime-db" "1.43.0"
+
+"mime-types@2.1.13":
+  "integrity" "sha1-4HqqnGxrmnyjASxpADrSWjnpKog="
+  "resolved" "https://registry.npmjs.org/mime-types/-/mime-types-2.1.13.tgz"
+  "version" "2.1.13"
+  dependencies:
+    "mime-db" "~1.25.0"
 
 "mime@^2.0.3":
   "integrity" "sha512-dhNd1uA2u397uQk3Nv5LM4lm93WYDUXFn3Fu291FJerns4jyTudqhIWe4W04YLy7Uk1tm1Ore04NpjRvQp/NPA=="
@@ -8384,6 +8403,14 @@
     "hash-base" "^3.0.0"
     "inherits" "^2.0.1"
 
+"rss@^1.2.2":
+  "integrity" "sha1-UKFpiHYTgTOnT5oF0r3I240nqSE="
+  "resolved" "https://registry.npmjs.org/rss/-/rss-1.2.2.tgz"
+  "version" "1.2.2"
+  dependencies:
+    "mime-types" "2.1.13"
+    "xml" "1.0.1"
+
 "run-parallel@^1.1.9":
   "integrity" "sha512-zb/1OuZ6flOlH6tQyMPUrE3x3Ulxjlo9WIVXR4yVYi4H9UXQaeIsPbLn2R3O3vQCnDKkAl2qHiuocKKX4Tz/Sw=="
   "resolved" "https://registry.npmjs.org/run-parallel/-/run-parallel-1.1.10.tgz"
@@ -10302,6 +10329,11 @@
   "integrity" "sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q=="
   "resolved" "https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-4.0.0.tgz"
   "version" "4.0.0"
+
+"xml@1.0.1":
+  "integrity" "sha1-eLpyAgApxbyHuKgaPPzXS0ovweU="
+  "resolved" "https://registry.npmjs.org/xml/-/xml-1.0.1.tgz"
+  "version" "1.0.1"
 
 "xss@^1.0.6":
   "integrity" "sha512-3MgPdaXV8rfQ/pNn16Eio6VXYPTkqwa0vc7GkiymmY/DqR1SE/7VPAAVZz1GJsJFrllMYO3RHfEaiUGjab6TNw=="
