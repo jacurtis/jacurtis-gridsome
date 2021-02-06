@@ -25,6 +25,29 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Post',
+        latest: true,
+        feedOptions: {
+          title: 'My Awesome Blog',
+          feed_url: 'https://jacurtis.com/rss.xml',
+          site_url: 'https://jacurtis.com'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.description,
+          url: 'https://superblog.com/journal/' + node.slug,
+          author: 'J. Alexander Curtis', //node.fields.author
+          categories: node.tags
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
+        }
+      }
     }
   ],
   transformers: {

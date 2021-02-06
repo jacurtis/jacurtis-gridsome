@@ -12,6 +12,7 @@
     "@gridsome/transformer-remark": "^0.4.0",
     "gridsome": "^0.7.23",
     "gridsome-helper-json": "^1.0.3",
+    "gridsome-plugin-rss": "^1.2.0",
     "reading-time": "^1.2.0"
   },
   "devDependencies": {

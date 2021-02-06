@@ -1,6 +1,6 @@
 ---
 title: Your Awesome Title
-slug: url-slug-for-browser
+slug: leaning-footers
 date: 2020-01-07
 published: false
 tags: ['VS Code', 'Linux']
