@@ -39,7 +39,7 @@ module.exports = {
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: 'https://superblog.com/journal/' + node.slug,
+          url: 'https://jacurtis.com/journal/' + node.slug,
           author: 'J. Alexander Curtis', //node.fields.author
           categories: node.tags
         }),
